@@ -52,11 +52,11 @@ def main():
         model = DistilBertForSequenceClassification.from_pretrained(model_directory)
 
         output = run_job(input, model, tokenizer)
-        # output.update(
-        #     {
-        #         "status": "success",
-        #     }
-        # )
+        output.update(
+            {
+                "status": "success",
+            }
+        )
 
     except Exception as error:
         print("❌ Error during processing:", file=sys.stderr, flush=True)

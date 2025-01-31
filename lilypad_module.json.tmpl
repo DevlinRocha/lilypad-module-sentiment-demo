@@ -18,7 +18,7 @@
                 "EnvironmentVariables": [
                     "INPUT={{ js .input }}"
                 ],
-                "Image": "",
+                "Image": "devlinrocha/lilypad-module-sentiment-demo:latest"
             },
             "Engine": "Docker",
             "Network": { "Type": "None" },
@@ -28,7 +28,7 @@
             "PublisherSpec": { "Type": "ipfs" },
             "Resources": { "CPU": "1", "Memory": "4000" },
             "Timeout": 600,
-            "Wasm": { "EntryModule": {} },
-        },
-    },
+            "Wasm": { "EntryModule": {} }
+        }
+    }
 }
